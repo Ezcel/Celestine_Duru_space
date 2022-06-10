@@ -1,20 +1,23 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     transition: all ease-in 1s;
-    -webkit-transition: all ease-in .2s;
-    -moz-transition: all ease-in 1s;
-    -ms-transition: all ease-in 1s;
-    -o-transition: all ease-in 1s;
+    -webkit-transition: all ease-in .3s;
+    -moz-transition: all ease-in 3s;
+    -ms-transition: all ease-in 3s;
+    -o-transition: all ease-in 3s;
 }
-body{
-    font-family: Montserrat;
+
+body {
+    font-family: 'Montserrat', sans-serif;
 }
-a{
+
+a {
     text-decoration: none !important;
 }
-header{
+
+header {
     background-color: #5b639c;
     display: flex;
     justify-content: space-between;
@@ -22,25 +25,32 @@ header{
     position: fixed;
     width: 100%;
 }
-#logoText{
+
+#logoText {
     font-family: 'Poppins';
     color: #fff;
 }
-.navbar ul li{
+
+.navbar ul li {
     list-style: none;
     display: inline;
 }
-.navbar ul li a{
+
+.navbar ul li a {
     color: #fff;
     text-decoration: none;
     padding: 10px 10px;
     font-weight: 500;
 }
-.navbar ul li a:hover, .navbar ul li a:focus, .active{
+
+.navbar ul li a:hover,
+.navbar ul li a:focus,
+.active {
     background-color: #434978;
     color: #fff;
 }
-.hero{
+
+.hero {
     background-image: url(../images/emmanuel-phaeton-ZFIkUxRTWHk-unsplash.jpg);
     background-color: #2f3354;
     background-blend-mode: overlay;
@@ -49,28 +59,33 @@ header{
     background-repeat: no-repeat;
     padding: 250px 100px 200px 100px;
 }
-#theme h1{
+
+#theme h1 {
     margin-bottom: 20px;
     font-size: 300%;
     color: #fff;
 }
-#theme p{
+
+#theme p {
     line-height: 1.5em;
     font-size: 120%;
     color: #fff;
     width: 80%;
 }
-#posts{
+
+#posts {
     padding: 100px 100px;
     display: grid;
     grid-template-rows: 80px fit-content 1fr;
 }
-#posts h2{
+
+#posts h2 {
     font-size: 200%;
     margin-bottom: 30px;
     color: #252944;
 }
-#posts h2 hr{
+
+#posts h2 hr {
     width: 80px;
     background-color: #000;
     color: #000;
@@ -78,7 +93,8 @@ header{
     border: 0;
     border: 1px solid #252944;
 }
-#postSections{
+
+#postSections {
     font-size: 110%;
     justify-self: center;
     display: flex;
@@ -92,7 +108,8 @@ header{
     -o-border-radius: 20px;
     margin-bottom: 30px;
 }
-#postSections a{
+
+#postSections a {
     color: #191d3a;
     text-decoration: none;
     font-weight: 600;
@@ -105,186 +122,273 @@ header{
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
-#postSections .active{
+
+#postSections .active {
     background-color: #434978;
     color: #fff;
 }
-#latestRelease{
+
+#latestRelease,
+#latestReleaseSmall {
     font-weight: 600;
     font-size: 90%;
     margin-bottom: 8px;
 }
-#date{
+
+#latestReleaseSmall {
+    display: none;
+}
+
+#date {
     font-weight: 300;
-    font-size: 85%;
+    font-size: 70%;
     margin-bottom: 8px;
 }
-#author{
+
+#author {
     font-weight: 300;
-    font-size: 85%;
+    font-size: 70%;
     font-style: italic;
     margin-top: 8px;
 }
-h3{
+
+h3 {
     font-size: 180%;
     margin: 10px 0;
 }
-#latest{
+
+#latest {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 50px 0 100px 0;
 }
-#lText{
+
+#lText {
     width: 50%;
 }
-#lImage{
+
+#lImage {
     width: 50%;
 }
-#lImage img{
+
+#lImage img {
     width: 90%;
 }
-#readMore{
+
+#readMore {
     border: 1px solid #5b639c;
     width: fit-content;
     padding: 5px 10px;
     margin-top: 10px;
     font-weight: 500;
-    
+
 }
+
 #lText a {
     color: #5b639c;
 }
-#readMore:hover, #readMore:focus{
+
+#readMore:hover,
+#readMore:focus {
     background-color: #5b639c;
     color: #fff;
     cursor: pointer;
 }
-#glimpse{
+
+#glimpse {
     line-height: 1.5em;
     width: 80%;
-}   
-#articles{
+}
+
+#articles {
     background-color: transparent;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
 }
-#cardOne{
+
+#cardOne {
     width: 100%;
     float: left;
     padding-left: 1%;
     margin-bottom: 30px;
 }
-#cardGlimpse{
+
+#cardGlimpse {
     width: 95%;
 }
-#cardOne img{
+
+#cardOne img {
     width: 100%;
 }
-#cardText{
+
+#cardText {
     margin-top: 20px;
+}
+
+#hamburger {
+    width: 20px;
+    display: none;
 }
 
 /* MEDIA QUERIES */
 @media (max-width: 1100px) {
-    #theme p{
+    #theme p {
         width: 100%;
     }
-    #lImage{
+
+    #lImage {
         width: 110%;
     }
-    #glimpse{
+
+    #glimpse {
         height: 100px;
         overflow: hidden;
     }
-    #articles{
+
+    #articles {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
         grid-gap: 30px;
     }
-    #cardGlimpse{
+
+    #cardGlimpse {
         width: 100%;
         height: 50px;
         overflow: hidden;
     }
 }
+
 @media (max-width: 940px) {
-    #glimpse{
+    #glimpse {
         height: 50px;
         overflow: hidden;
     }
-    #latestRelease{
+
+    #latestRelease {
         font-size: 80%;
     }
-    #postSections a{
+
+    #postSections a {
         width: 130px;
         font-size: 100%;
 
     }
-    h3{
+
+    h3 {
         font-size: 130%;
     }
-    .hero{
+
+    .hero {
+        background-image: url(../images/background-940px.jpg);
         padding: 250px 50px 200px 50px;
     }
-    header{
+
+    header {
         padding: 20px 50px;
     }
-    #posts{
+
+    #posts {
         padding: 100px 50px;
     }
 }
+
 @media (max-width: 670px) {
-    
-    #glimpse{
+
+    #glimpse {
         display: none;
     }
-    #cardGlimpse{
+
+    #cardGlimpse {
         display: none
     }
-    .hero{
+
+    .hero {
+
         background-position-x: center;
     }
 }
+
 @media (max-width: 534px) {
-    #articles{
+    #hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    #navigation ul {
+        position: fixed;
+        top: 65px;
+        right: -100%;
+        background-color: #5b639c;
+        width: 200px;
+        height: 500px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    #navigation ul.show {
+        right: 0;
+    }
+
+    #articles {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
         grid-gap: 20px;
     }
-    #postSections a{
+
+    #postSections a {
         width: 100px;
         font-size: 80%;
     }
-    #latest{
+
+    #latest {
         flex-direction: column;
+        margin-top: 20px;
     }
-    #lImage{
+
+    #lImage {
         width: 100%;
         margin-bottom: 20px;
     }
-    #lImage img{
+
+    #lImage img {
         width: 100%;
     }
-    #lText{
+
+    #lText {
         width: 100%;
     }
-    #glimpse{
+
+    #glimpse {
         display: block;
         width: 100%;
     }
-    #latestRelease{
+
+    #latestRelease {
         display: none;
     }
-    .hero{
+
+    #latestReleaseSmall {
+        display: inline;
+        margin-bottom: 0;
+    }
+
+    .hero {
+        background-image: url(../images/background-534px.jpg);
         padding: 200px 25px 150px 25px;
     }
-    header{
+
+    header {
         padding: 20px 25px;
     }
-    #posts{
+
+    #posts {
         padding: 100px 25px;
     }
 }
