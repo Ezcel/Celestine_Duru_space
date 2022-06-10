@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Celestine Duru Space</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;1,300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
@@ -13,15 +19,17 @@
         <div id="logo">
           <p id="logoText">Celestine Duru Space</p>
         </div>
-        <nav class="navbar">
+        <nav class="navbar" id="navigation">
           <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#posts">Posts</a></li>
+            <li>
+              <a href="../index.html" id="homeButton">Home</a>
+            </li>
+            <li><a href="../index.html#posts" id="postButton">Posts</a></li>
           </ul>
         </nav>
-        <!-- <div id="search">
-          <input type="search" name="search" id="searchbar" />
-        </div> -->
+        <div id="hamburger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="#fff" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+        </div>
       </header>
       <section class="hero">
         <div id="theme">
@@ -49,6 +57,7 @@
         </div>
 
         <!-- Latest Release -->
+        <p id="latestReleaseSmall">Latest Release</p>
         <div id="latest">
           <div id="lImage">
             <img
@@ -60,11 +69,10 @@
           <div id="lText">
             <p id="latestRelease">Latest Release</p>
             <p id="date">June 04, 2022</p>
-            <h3>Sons of God's image</h3>
+            <h3>Serpent Man</h3>
             <p id="glimpse">
-              You are sons of God's image (God created man in His image after
-              His likeness...). adipisicing elit. Eum laudantium ducimus ipsam
-              reprehenderit debitis
+              As Moses lifted up the serpent so is the Son of man, last Adam
+              (who&nbsp;became&nbsp;Sin) lifted up..
             </p>
             <p id="author">by Celestine Duru</p>
             <a href="posts/001.html">
@@ -75,76 +83,10 @@
           </div>
         </div>
 
-        <!-- Cards -->
-        <div id="articles">
-          <div id="cardOne">
-            <img
-              src="images/james-coleman-cevIeBV1A3I-unsplash.jpg"
-              alt="image"
-              width="200px"
-            />
-            <div id="cardText">
-              <p id="date">June 04, 2022</p>
-              <h3>Sons of God's image</h3>
-              <p id="cardGlimpse">
-                FIRST 15 words You are sons of God's image (God created man in
-                His image after His likeness...). adipisicing elit.
-              </p>
-              <p id="author">by Celestine Duru</p>
-              <a href="#">
-                <div id="readMore">
-                  <p>Read More</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div id="cardOne">
-            <div id="cardImg">
-              <img
-                src="images/james-coleman-cevIeBV1A3I-unsplash.jpg"
-                alt="image"
-                width="200px"
-              />
-            </div>
-
-            <div id="cardText">
-              <p id="date">June 04, 2022</p>
-              <h3>Sons of God's image</h3>
-              <p id="cardGlimpse">
-                FIRST 15 words You are sons of God's image (God created man in
-                His image after His likeness...). adipisicing elit.
-              </p>
-              <p id="author">by Celestine Duru</p>
-              <a href="#">
-                <div id="readMore">
-                  <p>Read More</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div id="cardOne">
-            <img
-              src="images/james-coleman-cevIeBV1A3I-unsplash.jpg"
-              alt="image"
-              width="200px"
-            />
-            <div id="cardText">
-              <p id="date">June 04, 2022</p>
-              <h3>Sons of God's image</h3>
-              <p id="cardGlimpse">
-                FIRST 15 words You are sons of God's image (God created man in
-                His image after His likeness...). adipisicing elit.
-              </p>
-              <p id="author">by Celestine Duru</p>
-              <a href="#">
-                <div id="readMore">
-                  <p>Read More</p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
+        
       </section>
     </main>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
